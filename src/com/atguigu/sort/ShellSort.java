@@ -6,11 +6,11 @@ import java.util.Date;
 
 public class ShellSort {
     public static void main(String[] args) {
-//        int[] arr = {8, 9, 1, 7, 2, 3, 5, 4, 6, 0};
-        int[] arr = new int[80000];
-        for (int i = 0; i < 80000; i++) {
-            arr[i] = (int) (Math.random() * 8000000);
-        }
+        int[] arr = {8, 9, 1, 7, 2, 3, 5, 4, 6, 0};
+//        int[] arr = new int[80000];
+//        for (int i = 0; i < 80000; i++) {
+//            arr[i] = (int) (Math.random() * 8000000);
+//        }
         System.out.println("排序前");
         Date date = new Date();
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -45,6 +45,7 @@ public class ShellSort {
 //        System.out.println(Arrays.toString(arr));
     }
 
+    //        int[] arr = {8, 9, 1, 7, 2, 3, 5, 4, 6, 0};
     //对交换式的希尔排序进行优化 -> 移位法
     public static void shellSort2(int[] arr) {
         //增量gap，并逐步减少增量
